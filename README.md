@@ -3,14 +3,14 @@ statistics for small datasets
 
 There are four small datasets in this lab. You are to write a python package which contains a series of functions which can analyze these data sets. The package, statzcw, will have a series of python files, each of which implement a standard statistic.
 
-- zcount(list: List[]) -> float
-- zmean(list: List[]) -> float
-- zmode(list: List[]) -> float
-- zmedian(list: List[]) -> float
-- zvariance(list: List[]) -> float
-- zstddev(list: List[]) -> float
-- zstderr(list: List[]) -> float
-- zcorr(listx: List[], listy: List[]) -> float
+-[x] zcount(list: List[]) -> float
+-[ ] zmean(list: List[]) -> float
+-[ ] zmode(list: List[]) -> float
+-[ ] zmedian(list: List[]) -> float
+-[ ] zvariance(list: List[]) -> float
+-[ ] zstddev(list: List[]) -> float
+-[ ] zstderr(list: List[]) -> float
+-[ ] zcorr(listx: List[], listy: List[]) -> float
 
 You may only use the following functions to construct your code:
 

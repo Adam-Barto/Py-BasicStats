@@ -12,3 +12,12 @@ class Test(TestCase):
                 actual = szcw.zcount(data)
                 Test.assertEqual(self, expected, actual)
 
+    def test_zmean(self):
+        test_cases = [[[1.0, 2.0, 3.0, 4.0, 5.0], 3.0],
+                [[13, 20, 32, 41], 26.5],
+                [[1.0, 2.0, 3.0, 4.0, 5.0, 6.0], 3.5]
+                ]
+        for (data, expected) in test_cases:
+            with self.subTest(f"{data}, {expected}"):
+                actual = szcw.zmean(data)
+                Test.assertEqual(self, expected, actual)

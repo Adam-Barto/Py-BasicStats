@@ -1,6 +1,4 @@
 
-
-# - zcount(list: List[]) -> float
 # - zmean(list: List[]) -> float
 # - zmode(list: List[]) -> float
 # - zmedian(list: List[]) -> float
@@ -19,3 +17,6 @@
 
 def zcount(l: list) -> float:
     return float(len(l))
+
+def zmean(l: list) -> float:
+    return sum(l)/zcount(l)
