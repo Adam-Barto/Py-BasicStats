@@ -51,3 +51,13 @@ class Test(TestCase):
             with self.subTest(f"{data}, {expected}"):
                 actual = szcw.zvariance(data)
                 Test.assertAlmostEqual(self, expected, actual, delta=.00001)
+
+    def test_zstddev(self):
+        test_cases = [[[1.0, 2.0, 3.0, 4.0, 5.0], 1.58113883],
+                [[13, 20, 30, 40, 50, 60], 17.9304],
+                [[7.0, 2.0, 2.0, 8.0, 6.0, 3.0], 2.65832027]
+                ]
+        for (data, expected) in test_cases:
+            with self.subTest(f"{data}, {expected}"):
+                actual = szcw.zstddev(data)
+                Test.assertAlmostEqual(self, expected, actual, delta=.001)

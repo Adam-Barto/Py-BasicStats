@@ -44,4 +44,5 @@ def zvariance(l: list) -> float:
 
 
 def zstddev(l: list) -> float:
+    return math.sqrt(zvariance(l))
 
