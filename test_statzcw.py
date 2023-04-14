@@ -61,3 +61,13 @@ class Test(TestCase):
             with self.subTest(f"{data}, {expected}"):
                 actual = szcw.zstddev(data)
                 Test.assertAlmostEqual(self, expected, actual, delta=.001)
+
+    def test_zstderr(self):
+        test_cases = [[[1.0, 2.0, 3.0, 4.0, 5.0], 0.707106781],
+                [[13, 20, 30, 40, 50, 60], 7.320063751],
+                [[7.0, 2.0, 2.0, 8.0, 6.0, 3.0], 1.085254706]
+                ]
+        for (data, expected) in test_cases:
+            with self.subTest(f"{data}, {expected}"):
+                actual = szcw.zstderr(data)
+                Test.assertAlmostEqual(self, expected, actual, delta=.001)

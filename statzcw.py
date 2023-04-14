@@ -1,5 +1,3 @@
-# - zstddev(list: List[]) -> float
-# - zstderr(list: List[]) -> float
 # - zcorr(listx: List[], listy: List[]) -> float
 #
 # - python builtin `sum()`
@@ -46,3 +44,6 @@ def zvariance(l: list) -> float:
 def zstddev(l: list) -> float:
     return math.sqrt(zvariance(l))
 
+
+def zstderr(l: list) -> float:
+    return zstddev(l) / math.sqrt(zcount(l))
