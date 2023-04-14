@@ -7,7 +7,7 @@ There are four small datasets in this lab. You are to write a python package whi
 -[x] zmean(list: List[]) -> float
 -[x] zmode(list: List[]) -> float
 -[x] zmedian(list: List[]) -> float
--[ ] zvariance(list: List[]) -> float
+-[x] zvariance(list: List[]) -> float
 -[ ] zstddev(list: List[]) -> float
 -[ ] zstderr(list: List[]) -> float
 -[ ] zcorr(listx: List[], listy: List[]) -> float
