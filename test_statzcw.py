@@ -71,3 +71,14 @@ class Test(TestCase):
             with self.subTest(f"{data}, {expected}"):
                 actual = szcw.zstderr(data)
                 Test.assertAlmostEqual(self, expected, actual, delta=.001)
+
+    def test_zcorr(self):
+        test_cases = [
+            [[1.0, 2.0, 3.0, 4.0, 5.0], [1.0, 2.0, 2.0, 4.0, 5.0], 0.962],
+            [[82, 43, 20, 4.0, 5.0], [1.0, 2.0, 8.0, 4.0, 9.0], -0.751],
+            [[1.0, 2.0, 3.0, 6.0, 6.0], [2.0, 2.0, 4.0, 4.0, 8.0], 0.797]
+            ]
+        for (data0, data1, expected) in test_cases:
+            with self.subTest(f'{data0}, {data1}, {expected}'):
+                actual = szcw.zcorr(data0, data1)
+                Test.assertAlmostEqual(self, expected, actual, delta=.001)
