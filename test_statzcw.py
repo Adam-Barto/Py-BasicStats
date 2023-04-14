@@ -31,3 +31,13 @@ class Test(TestCase):
             with self.subTest(f"{data}, {expected}"):
                 actual = szcw.zmode(data)
                 Test.assertEqual(self, expected, actual)
+
+    def test_zmedian(self):
+        test_cases = [[[1.0, 2.0, 2.0, 4.0, 5.0], 2.0],
+                [[13, 20, 30, 40, 50, 60], 35.0],
+                [[7.0, 2.0, 2.0, 8.0, 6.0, 3.0], 4.5]
+                ]
+        for (data, expected) in test_cases:
+            with self.subTest(f"{data}, {expected}"):
+                actual = szcw.zmedian(data)
+                Test.assertEqual(self, expected, actual)
