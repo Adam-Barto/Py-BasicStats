@@ -4,8 +4,8 @@ statistics for small datasets
 There are four small datasets in this lab. You are to write a python package which contains a series of functions which can analyze these data sets. The package, statzcw, will have a series of python files, each of which implement a standard statistic.
 
 -[x] zcount(list: List[]) -> float
--[ ] zmean(list: List[]) -> float
--[ ] zmode(list: List[]) -> float
+-[x] zmean(list: List[]) -> float
+-[x] zmode(list: List[]) -> float
 -[ ] zmedian(list: List[]) -> float
 -[ ] zvariance(list: List[]) -> float
 -[ ] zstddev(list: List[]) -> float
