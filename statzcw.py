@@ -52,3 +52,4 @@ def cov(lx: list, ly: list):  # covariance
 
 def zcorr(lx: list, ly: list) -> float:
     return cov(lx, ly) / (zstddev(lx) * zstddev(ly))
+
